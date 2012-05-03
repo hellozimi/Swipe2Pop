@@ -18,11 +18,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
+    
     self.viewController = [[HCViewController alloc] initWithNibName:@"HCViewController" bundle:nil];
     self.viewController.title = @"Title";
     
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    nc.leftArrowView = [UIView viewWithFrame:CGRectMake(0, 0, 100, 100) drawRect:^(CGRect rect) {
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        
+        [[[UIColor blackColor] colorWithAlphaComponent:0.8] setFill];
+        
+        CGContextAddEllipseInRect(context, CGRectMake(-rect.size.width/2, 0, rect.size.width, rect.size.height));
+        CGContextFillPath(context);
+    }];
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     
