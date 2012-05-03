@@ -40,6 +40,46 @@
 }
 
 @end
+
+@implementation UIView (Other)
+
+- (void)setHeight:(CGFloat)val {
+    CGRect frame = self.frame;
+    frame.size.height = val;
+    self.frame = frame;
+}
+
+- (void)setWidth:(CGFloat)val {
+    CGRect frame = self.frame;
+    frame.size.width = val;
+    self.frame = frame;
+}
+
+- (void)setLeft:(CGFloat)val {
+    CGRect frame = self.frame;
+    frame.origin.x = val;
+    self.frame = frame;
+}
+
+- (void)setTop:(CGFloat)val {
+    CGRect frame = self.frame;
+    frame.origin.y = val;
+    self.frame = frame;
+}
+
+- (CGFloat)width { return self.frame.size.width; }
+- (CGFloat)height { return self.frame.size.height; }
+- (CGFloat)left { return self.frame.origin.x; }
+- (CGFloat)top { return self.frame.origin.y; }
+
++ (UIView *)viewWithFrame:(CGRect)frame drawRect:(DrawRectBlock)block {
+    HCView *view = [[HCView alloc] initWithFrame:frame];
+    view.backgroundColor = [UIColor clearColor];
+    [view setDrawRectBlock:block];
+    return view;
+}
+
+@end
 @implementation UINavigationController (PopOnSwipeRight)
 
 - (void)viewDidLoad {

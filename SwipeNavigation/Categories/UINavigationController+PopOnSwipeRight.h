@@ -42,6 +42,40 @@ typedef void(^DrawRectBlock)(CGRect rect);
 - (void)setDrawRectBlock:(DrawRectBlock)block;
 
 @end
+
+@interface UIView (Other)
+
+///------------------
+/// @name Properties
+///------------------
+
+/** Returns and sets the width */
+@property(nonatomic, readwrite) CGFloat width;
+
+/** Returns and sets the height */
+@property(nonatomic, readwrite) CGFloat height;
+
+/** Returns and sets the offset to the top */
+@property(nonatomic, readwrite) CGFloat top;
+
+/** Returns and sets the offset to the left */
+@property(nonatomic, readwrite) CGFloat left;
+
+
+///------------------
+/// @name Initializes the DrawRectBlock View
+///------------------
+
+/**
+ Creates a view with a drawRect: block
+ 
+ @param frame The rectangle of the view
+ @param block The DrawRect of the block
+ 
+ @return UIView with the target frame and graphic context
+ */
++ (UIView *)viewWithFrame:(CGRect)frame drawRect:(DrawRectBlock)block;
+@end
 @interface UINavigationController (PopOnSwipeRight)
 
 @end
