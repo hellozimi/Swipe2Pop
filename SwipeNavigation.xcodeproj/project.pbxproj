@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4C06C661552610D00D48C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C651552610D00D48C0D /* UIKit.framework */; };
+		F4C06C681552610D00D48C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C671552610D00D48C0D /* Foundation.framework */; };
+		F4C06C6A1552610D00D48C0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C691552610D00D48C0D /* CoreGraphics.framework */; };
+		F4C06C701552610D00D48C0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C06C6E1552610D00D48C0D /* InfoPlist.strings */; };
+		F4C06C721552610D00D48C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C711552610D00D48C0D /* main.m */; };
+		F4C06C761552610D00D48C0D /* HCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C751552610D00D48C0D /* HCAppDelegate.m */; };
+		F4C06C7F1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */; };
+		F4C06C841552619D00D48C0D /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C821552619D00D48C0D /* HCViewController.m */; };
+		F4C06C851552619D00D48C0D /* HCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C06C831552619D00D48C0D /* HCViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4C06C611552610D00D48C0D /* SwipeNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C06C651552610D00D48C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4C06C671552610D00D48C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4C06C691552610D00D48C0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4C06C6D1552610D00D48C0D /* SwipeNavigation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeNavigation-Info.plist"; sourceTree = "<group>"; };
+		F4C06C6F1552610D00D48C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4C06C711552610D00D48C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4C06C731552610D00D48C0D /* SwipeNavigation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeNavigation-Prefix.pch"; sourceTree = "<group>"; };
+		F4C06C741552610D00D48C0D /* HCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAppDelegate.h; sourceTree = "<group>"; };
+		F4C06C751552610D00D48C0D /* HCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAppDelegate.m; sourceTree = "<group>"; };
+		F4C06C7D1552617100D48C0D /* UINavigationController+PopOnSwipeRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PopOnSwipeRight.h"; sourceTree = "<group>"; };
+		F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PopOnSwipeRight.m"; sourceTree = "<group>"; };
+		F4C06C811552619D00D48C0D /* HCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCViewController.h; sourceTree = "<group>"; };
+		F4C06C821552619D00D48C0D /* HCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCViewController.m; sourceTree = "<group>"; };
+		F4C06C831552619D00D48C0D /* HCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C06C5E1552610D00D48C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C06C661552610D00D48C0D /* UIKit.framework in Frameworks */,
+				F4C06C681552610D00D48C0D /* Foundation.framework in Frameworks */,
+				F4C06C6A1552610D00D48C0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4C06C561552610D00D48C0D = {
+			isa = PBXGroup;
+			children = (
+				F4C06C6B1552610D00D48C0D /* SwipeNavigation */,
+				F4C06C641552610D00D48C0D /* Frameworks */,
+				F4C06C621552610D00D48C0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C06C621552610D00D48C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C611552610D00D48C0D /* SwipeNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C06C641552610D00D48C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C651552610D00D48C0D /* UIKit.framework */,
+				F4C06C671552610D00D48C0D /* Foundation.framework */,
+				F4C06C691552610D00D48C0D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C06C6B1552610D00D48C0D /* SwipeNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C801552618E00D48C0D /* ViewControllers */,
+				F4C06C7C1552615F00D48C0D /* Categories */,
+				F4C06C741552610D00D48C0D /* HCAppDelegate.h */,
+				F4C06C751552610D00D48C0D /* HCAppDelegate.m */,
+				F4C06C6C1552610D00D48C0D /* Supporting Files */,
+			);
+			path = SwipeNavigation;
+			sourceTree = "<group>";
+		};
+		F4C06C6C1552610D00D48C0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C6D1552610D00D48C0D /* SwipeNavigation-Info.plist */,
+				F4C06C6E1552610D00D48C0D /* InfoPlist.strings */,
+				F4C06C711552610D00D48C0D /* main.m */,
+				F4C06C731552610D00D48C0D /* SwipeNavigation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4C06C7C1552615F00D48C0D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C7D1552617100D48C0D /* UINavigationController+PopOnSwipeRight.h */,
+				F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F4C06C801552618E00D48C0D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C06C811552619D00D48C0D /* HCViewController.h */,
+				F4C06C821552619D00D48C0D /* HCViewController.m */,
+				F4C06C831552619D00D48C0D /* HCViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C06C601552610D00D48C0D /* SwipeNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C06C791552610D00D48C0D /* Build configuration list for PBXNativeTarget "SwipeNavigation" */;
+			buildPhases = (
+				F4C06C5D1552610D00D48C0D /* Sources */,
+				F4C06C5E1552610D00D48C0D /* Frameworks */,
+				F4C06C5F1552610D00D48C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeNavigation;
+			productName = SwipeNavigation;
+			productReference = F4C06C611552610D00D48C0D /* SwipeNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C06C581552610D00D48C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HC;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Hiddencode.me;
+			};
+			buildConfigurationList = F4C06C5B1552610D00D48C0D /* Build configuration list for PBXProject "SwipeNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4C06C561552610D00D48C0D;
+			productRefGroup = F4C06C621552610D00D48C0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C06C601552610D00D48C0D /* SwipeNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C06C5F1552610D00D48C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C06C701552610D00D48C0D /* InfoPlist.strings in Resources */,
+				F4C06C851552619D00D48C0D /* HCViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C06C5D1552610D00D48C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C06C721552610D00D48C0D /* main.m in Sources */,
+				F4C06C761552610D00D48C0D /* HCAppDelegate.m in Sources */,
+				F4C06C7F1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m in Sources */,
+				F4C06C841552619D00D48C0D /* HCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4C06C6E1552610D00D48C0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C06C6F1552610D00D48C0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C06C771552610D00D48C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4C06C781552610D00D48C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C06C7A1552610D00D48C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeNavigation/SwipeNavigation-Prefix.pch";
+				INFOPLIST_FILE = "SwipeNavigation/SwipeNavigation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4C06C7B1552610D00D48C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeNavigation/SwipeNavigation-Prefix.pch";
+				INFOPLIST_FILE = "SwipeNavigation/SwipeNavigation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C06C5B1552610D00D48C0D /* Build configuration list for PBXProject "SwipeNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C06C771552610D00D48C0D /* Debug */,
+				F4C06C781552610D00D48C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C06C791552610D00D48C0D /* Build configuration list for PBXNativeTarget "SwipeNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C06C7A1552610D00D48C0D /* Debug */,
+				F4C06C7B1552610D00D48C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C06C581552610D00D48C0D /* Project object */;
+}
