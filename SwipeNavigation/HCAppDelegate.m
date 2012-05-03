@@ -32,7 +32,8 @@
         CGContextAddEllipseInRect(context, CGRectMake(-rect.size.width/2, 0, rect.size.width, rect.size.height));
         CGContextFillPath(context);
     }];
-    
+    nc.distanceToDrag = 250;
+    nc.numberOfTouches = 3;
     
     self.window.backgroundColor = [UIColor whiteColor];
     
