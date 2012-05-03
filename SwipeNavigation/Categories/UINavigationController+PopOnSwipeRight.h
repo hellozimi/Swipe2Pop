@@ -26,6 +26,22 @@
 
 #import <UIKit/UIKit.h>
 
+/** Defines the DrawRectBlock type */
+typedef void(^DrawRectBlock)(CGRect rect);
+
+@interface HCView : UIView {
+@private
+    DrawRectBlock block;
+}
+
+/**
+ A convenient method to define the drawRect: block
+ 
+ @param block The drawRect: block
+ */
+- (void)setDrawRectBlock:(DrawRectBlock)block;
+
+@end
 @interface UINavigationController (PopOnSwipeRight)
 
 @end

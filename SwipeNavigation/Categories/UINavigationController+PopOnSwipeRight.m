@@ -26,6 +26,20 @@
 
 #import "UINavigationController+PopOnSwipeRight.h"
 
+@implementation HCView
+
+- (void)setDrawRectBlock:(DrawRectBlock)b {
+    block = [b copy];
+    [self setNeedsDisplay];
+}
+
+- (void)drawRect:(CGRect)rect {
+    if (block) {
+        block(rect);
+    }
+}
+
+@end
 @implementation UINavigationController (PopOnSwipeRight)
 
 - (void)viewDidLoad {
