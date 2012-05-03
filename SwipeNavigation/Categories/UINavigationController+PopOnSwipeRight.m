@@ -80,6 +80,16 @@
 }
 
 @end
+
+@implementation UIGestureRecognizer (Additions)
+
+-(void)cancel {
+    self.enabled = NO;
+    self.enabled = YES;
+}
+
+@end
+
 @implementation UINavigationController (PopOnSwipeRight)
 
 - (void)viewDidLoad {

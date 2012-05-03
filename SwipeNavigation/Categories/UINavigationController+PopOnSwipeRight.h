@@ -76,6 +76,17 @@ typedef void(^DrawRectBlock)(CGRect rect);
  */
 + (UIView *)viewWithFrame:(CGRect)frame drawRect:(DrawRectBlock)block;
 @end
+
+@interface UIGestureRecognizer (Additions)
+
+///------------------
+/// @name Methods
+///------------------
+
+/** Cancels a UIGestureRecognizer */
+- (void)cancel;
+@end
+
 @interface UINavigationController (PopOnSwipeRight)
 
 @end
