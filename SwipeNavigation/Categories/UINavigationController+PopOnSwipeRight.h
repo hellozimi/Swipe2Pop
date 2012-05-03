@@ -89,4 +89,26 @@ typedef void(^DrawRectBlock)(CGRect rect);
 
 @interface UINavigationController (PopOnSwipeRight)
 
+///------------------
+/// @name Properties
+///------------------
+
+/**
+ Sets and returns and current pop indicator view
+ Default nil
+ */
+@property (nonatomic, strong) UIView *leftArrowView;
+
+/**
+ Sets and returns the number of touches required to swipe-to-pop
+ Default 2
+ */
+@property (nonatomic) int numberOfTouches;
+
+/**
+ Sets and returns the amout of pixels required to drag before pop
+ Default 300.0
+ */
+@property (nonatomic) float distanceToDrag;
+
 @end
