@@ -24,16 +24,16 @@
     
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     
-    nc.leftArrowView = [UIView viewWithFrame:CGRectMake(0, 0, 100, 100) drawRect:^(CGRect rect) {
+    nc.leftArrowView = [UIView viewWithFrame:CGRectMake(0, 0, 50, 100) drawRect:^(CGRect rect) {
         CGContextRef context = UIGraphicsGetCurrentContext();
         
         [[[UIColor blackColor] colorWithAlphaComponent:0.8] setFill];
         
-        CGContextAddEllipseInRect(context, CGRectMake(-rect.size.width/2, 0, rect.size.width, rect.size.height));
+        CGContextAddEllipseInRect(context, CGRectMake(-rect.size.height/2, 0, rect.size.height, rect.size.height));
         CGContextFillPath(context);
     }];
-    nc.distanceToDrag = 250;
-    nc.numberOfTouches = 3;
+    nc.distanceToDrag = 175;
+    nc.numberOfTouches = 2;
     
     self.window.backgroundColor = [UIColor whiteColor];
     
