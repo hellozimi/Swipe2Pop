@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40D5E0315554A4100B306BD /* HCStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D5E0115554A4100B306BD /* HCStartViewController.m */; };
+		F40D5E0415554A4100B306BD /* HCStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40D5E0215554A4100B306BD /* HCStartViewController.xib */; };
+		F40D5E0615554DB200B306BD /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F40D5E0515554DB200B306BD /* Data.plist */; };
+		F40D5E09155552BB00B306BD /* HCSubCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D5E08155552BB00B306BD /* HCSubCategoriesViewController.m */; };
+		F40D5E0C1555544100B306BD /* HCEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D5E0B1555544100B306BD /* HCEntriesViewController.m */; };
+		F40D5E101555553800B306BD /* HCEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D5E0E1555553800B306BD /* HCEntryViewController.m */; };
+		F40D5E111555553800B306BD /* HCEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40D5E0F1555553800B306BD /* HCEntryViewController.xib */; };
 		F4C06C661552610D00D48C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C651552610D00D48C0D /* UIKit.framework */; };
 		F4C06C681552610D00D48C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C671552610D00D48C0D /* Foundation.framework */; };
 		F4C06C6A1552610D00D48C0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C06C691552610D00D48C0D /* CoreGraphics.framework */; };
@@ -14,11 +21,20 @@
 		F4C06C721552610D00D48C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C711552610D00D48C0D /* main.m */; };
 		F4C06C761552610D00D48C0D /* HCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C751552610D00D48C0D /* HCAppDelegate.m */; };
 		F4C06C7F1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */; };
-		F4C06C841552619D00D48C0D /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C06C821552619D00D48C0D /* HCViewController.m */; };
-		F4C06C851552619D00D48C0D /* HCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C06C831552619D00D48C0D /* HCViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40D5E0015554A4100B306BD /* HCStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCStartViewController.h; sourceTree = "<group>"; };
+		F40D5E0115554A4100B306BD /* HCStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCStartViewController.m; sourceTree = "<group>"; };
+		F40D5E0215554A4100B306BD /* HCStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCStartViewController.xib; sourceTree = "<group>"; };
+		F40D5E0515554DB200B306BD /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		F40D5E07155552BB00B306BD /* HCSubCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSubCategoriesViewController.h; sourceTree = "<group>"; };
+		F40D5E08155552BB00B306BD /* HCSubCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSubCategoriesViewController.m; sourceTree = "<group>"; };
+		F40D5E0A1555544100B306BD /* HCEntriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEntriesViewController.h; sourceTree = "<group>"; };
+		F40D5E0B1555544100B306BD /* HCEntriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEntriesViewController.m; sourceTree = "<group>"; };
+		F40D5E0D1555553800B306BD /* HCEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEntryViewController.h; sourceTree = "<group>"; };
+		F40D5E0E1555553800B306BD /* HCEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEntryViewController.m; sourceTree = "<group>"; };
+		F40D5E0F1555553800B306BD /* HCEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCEntryViewController.xib; sourceTree = "<group>"; };
 		F4C06C611552610D00D48C0D /* SwipeNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C06C651552610D00D48C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F4C06C671552610D00D48C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,9 +47,6 @@
 		F4C06C751552610D00D48C0D /* HCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAppDelegate.m; sourceTree = "<group>"; };
 		F4C06C7D1552617100D48C0D /* UINavigationController+PopOnSwipeRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PopOnSwipeRight.h"; sourceTree = "<group>"; };
 		F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PopOnSwipeRight.m"; sourceTree = "<group>"; };
-		F4C06C811552619D00D48C0D /* HCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCViewController.h; sourceTree = "<group>"; };
-		F4C06C821552619D00D48C0D /* HCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCViewController.m; sourceTree = "<group>"; };
-		F4C06C831552619D00D48C0D /* HCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F40D5DFF15554A2C00B306BD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F40D5E0015554A4100B306BD /* HCStartViewController.h */,
+				F40D5E0115554A4100B306BD /* HCStartViewController.m */,
+				F40D5E0215554A4100B306BD /* HCStartViewController.xib */,
+				F40D5E07155552BB00B306BD /* HCSubCategoriesViewController.h */,
+				F40D5E08155552BB00B306BD /* HCSubCategoriesViewController.m */,
+				F40D5E0A1555544100B306BD /* HCEntriesViewController.h */,
+				F40D5E0B1555544100B306BD /* HCEntriesViewController.m */,
+				F40D5E0D1555553800B306BD /* HCEntryViewController.h */,
+				F40D5E0E1555553800B306BD /* HCEntryViewController.m */,
+				F40D5E0F1555553800B306BD /* HCEntryViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F4C06C561552610D00D48C0D = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +110,7 @@
 		F4C06C6B1552610D00D48C0D /* SwipeNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				F4C06C801552618E00D48C0D /* ViewControllers */,
+				F40D5DFF15554A2C00B306BD /* ViewControllers */,
 				F4C06C7C1552615F00D48C0D /* Categories */,
 				F4C06C741552610D00D48C0D /* HCAppDelegate.h */,
 				F4C06C751552610D00D48C0D /* HCAppDelegate.m */,
@@ -96,6 +126,7 @@
 				F4C06C6E1552610D00D48C0D /* InfoPlist.strings */,
 				F4C06C711552610D00D48C0D /* main.m */,
 				F4C06C731552610D00D48C0D /* SwipeNavigation-Prefix.pch */,
+				F40D5E0515554DB200B306BD /* Data.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -107,16 +138,6 @@
 				F4C06C7E1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		F4C06C801552618E00D48C0D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F4C06C811552619D00D48C0D /* HCViewController.h */,
-				F4C06C821552619D00D48C0D /* HCViewController.m */,
-				F4C06C831552619D00D48C0D /* HCViewController.xib */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C06C701552610D00D48C0D /* InfoPlist.strings in Resources */,
-				F4C06C851552619D00D48C0D /* HCViewController.xib in Resources */,
+				F40D5E0415554A4100B306BD /* HCStartViewController.xib in Resources */,
+				F40D5E0615554DB200B306BD /* Data.plist in Resources */,
+				F40D5E111555553800B306BD /* HCEntryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +209,10 @@
 				F4C06C721552610D00D48C0D /* main.m in Sources */,
 				F4C06C761552610D00D48C0D /* HCAppDelegate.m in Sources */,
 				F4C06C7F1552617100D48C0D /* UINavigationController+PopOnSwipeRight.m in Sources */,
-				F4C06C841552619D00D48C0D /* HCViewController.m in Sources */,
+				F40D5E0315554A4100B306BD /* HCStartViewController.m in Sources */,
+				F40D5E09155552BB00B306BD /* HCSubCategoriesViewController.m in Sources */,
+				F40D5E0C1555544100B306BD /* HCEntriesViewController.m in Sources */,
+				F40D5E101555553800B306BD /* HCEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +278,7 @@
 		F4C06C7A1552610D00D48C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeNavigation/SwipeNavigation-Prefix.pch";
@@ -267,6 +294,7 @@
 		F4C06C7B1552610D00D48C0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeNavigation/SwipeNavigation-Prefix.pch";
 				INFOPLIST_FILE = "SwipeNavigation/SwipeNavigation-Info.plist";

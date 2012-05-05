@@ -76,7 +76,7 @@
     HCView *view = [[HCView alloc] initWithFrame:frame];
     view.backgroundColor = [UIColor clearColor];
     [view setDrawRectBlock:block];
-    return view;
+    return [view autorelease];
 }
 
 @end
@@ -152,7 +152,8 @@ float clamp(float min, float max, float value) {
 #pragma mark - Setters
 
 - (void)setLeftArrowView:(UIView *)leftArrow {
-    LEFT_ARROW_INSTANCE = leftArrow;
+    [LEFT_ARROW_INSTANCE release], LEFT_ARROW_INSTANCE = nil;
+    LEFT_ARROW_INSTANCE = [leftArrow retain];
     self.leftArrowView.top = (self.view.height - self.leftArrowView.height) / 2;
     self.leftArrowView.left = -self.leftArrowView.width;
     
@@ -170,7 +171,7 @@ float clamp(float min, float max, float value) {
     
     NUMBER_OF_TOUCHES = numberOfTouches;
     
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
+    UIPanGestureRecognizer *panGestureRecognizer = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)] autorelease];
     [panGestureRecognizer setMaximumNumberOfTouches:NUMBER_OF_TOUCHES];
     [panGestureRecognizer setMinimumNumberOfTouches:NUMBER_OF_TOUCHES];
     
