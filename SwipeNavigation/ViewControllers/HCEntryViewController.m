@@ -12,13 +12,23 @@
 
 @end
 
+@implementation UITextView (DisableSelect)
+
+- (BOOL)canBecomeFirstResponder {
+    return NO;
+}
+
+@end
+
 @implementation HCEntryViewController
+@synthesize titleLabel = titleLabel_;
+@synthesize descriptionTextView = descriptionTextView_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = @"Entry";
     }
     return self;
 }

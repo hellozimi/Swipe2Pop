@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HCEntriesViewController : UITableViewController
+@interface HCEntriesViewController : UITableViewController {
+    NSMutableArray *entries_;
+}
+
+@property (nonatomic, retain) NSMutableArray *entries;
 
 @end

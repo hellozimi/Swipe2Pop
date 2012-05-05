@@ -7,22 +7,20 @@
 //
 
 #import "HCAppDelegate.h"
-#import "HCViewController.h"
 #import "UINavigationController+PopOnSwipeRight.h"
+#import "HCStartViewController.h"
 
 @implementation HCAppDelegate
+@synthesize viewController = _viewController;
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    self.viewController = [[HCViewController alloc] initWithNibName:@"HCViewController" bundle:nil];
-    self.viewController.title = @"Title";
-    
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+
+    self.viewController = [[[HCStartViewController alloc] initWithNibName:@"HCStartViewController" bundle:nil] autorelease];
+    UINavigationController *nc = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
     
     nc.leftArrowView = [UIView viewWithFrame:CGRectMake(0, 0, 50, 100) drawRect:^(CGRect rect) {
         CGContextRef context = UIGraphicsGetCurrentContext();

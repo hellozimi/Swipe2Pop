@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HCSubCategoriesViewController : UITableViewController
+@interface HCSubCategoriesViewController : UITableViewController {
+    NSMutableArray *subCategories_;
+}
+
+@property (nonatomic, retain) NSMutableArray *subCategories;
 
 @end

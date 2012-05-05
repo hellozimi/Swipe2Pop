@@ -7,18 +7,20 @@
 //
 
 #import "HCSubCategoriesViewController.h"
+#import "HCEntriesViewController.h"
 
 @interface HCSubCategoriesViewController ()
 
 @end
 
 @implementation HCSubCategoriesViewController
+@synthesize subCategories = subCategories_;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        self.title = @"Subcategories";
     }
     return self;
 }
@@ -41,6 +43,11 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -48,26 +55,25 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [subCategories_ count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
     
-    // Configure the cell...
+    NSDictionary *subCategory = [subCategories_ objectAtIndex:indexPath.row];
+    NSString *title = [subCategory objectForKey:@"Title"];
+    cell.textLabel.text = title;
     
     return cell;
 }
@@ -115,14 +121,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
+    NSDictionary *subCategory = [subCategories_ objectAtIndex:indexPath.row];
+    NSArray *entries = [subCategory objectForKey:@"Items"];
+    
+    HCEntriesViewController *vc = [[[HCEntriesViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    vc.entries = (NSMutableArray *)entries;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>Categories</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Cars</string>
+			<key>SubCategories</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Volvo</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>Title</key>
+							<string>Volvo 240</string>
+							<key>Description</key>
+							<string>The Volvo 200 series is a range of large family cars (mid-size cars in the USA), produced by Volvo from 1974 to 1993, with more than 2.8 million units sold worldwide.[1] The 200 series was essentially an updated version of the 140; both were designed by Jan Wilsgaard. It shared the same body, but included a number of mechanical improvements. The 200 replaced the 140 and the 140-based 164, and overlapped production of the Volvo 700 series introduced in 1982. As the 240 remained popular, only the 260 was displaced by the 700 series — which Volvo marketed alongside the 240 for another decade. The 700 series was replaced a year before the 240 was discontinued. At the time, Volvo guaranteed their cars would last for 19.3 years. Sourece: http://en.wikipedia.org/wiki/Volvo_240</string>
+						</dict>
+						<dict>
+							<key>Title</key>
+							<string>Volvo V70</string>
+							<key>Description</key>
+							<string>The Volvo V70 is a mid-size five-door estate car / station wagon manufactured by Volvo Cars since 1997. It is closely related to the S70, S60 and S80 saloons, as well as the four-wheel drive Cross Country (XC) and XC70.
+Since its inception, the V70 has evolved through three generations, with the second generation designed by Peter Horbury. Source: http://en.wikipedia.org/wiki/Volvo_V70</string>
+						</dict>
+						<dict>
+							<key>Title</key>
+							<string>Volvo XC90</string>
+							<key>Description</key>
+							<string>The Volvo XC90 is a mid-size luxury crossover SUV produced by Volvo Cars since it was unveiled at the Detroit Motor Show 2002. It is based on the P2 platform, shared with the first generation Volvo S80 and other large Volvo cars. As Volvo&apos;s top-selling vehicle in the United States, the XC90 was also Volvo&apos;s best selling model worldwide in 2005 with 85,994 cars sold. Source: http://en.wikipedia.org/wiki/Volvo_XC90</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Saab</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>Title</key>
+							<string>Saab 95</string>
+							<key>Description</key>
+							<string>The Saab 95 was a 7-seater, 2-door station wagon made by Saab. Initially it was based on the Saab 93 sedan version, but the model&apos;s development throughout the years followed closely that of the 96 since the 93 was put off the market in 1960. It was introduced in 1959, but because only 40 were made in 1959, production is often said to have started in 1960.
+The first engine was an 841 cc three-cylinder two-stroke engine, but from 1967 onward, it became available with the same four-stroke Ford Taunus V4 engine as used in the Saab 96, the Saab Sonett V4 and Sonett III, and the German Ford Taunus. It had a four-speed manual transmission. There was a small handle on the firewall that, when pushed, put the car into a &quot;freewheeling&quot; mode. This allowed the driver to coast downhill without seizing the two stroke engine, but when power was needed the transmission would engage and the driver could power the car up hill again. As the 95 received the four speed gearbox before the 96 (that still had the old three speed) it was also used for rallying.
+A rear-facing folding seat was dropped with the 1976 model, making the car a regular 5-seater. Production ended in 1978. A total of 110,527 were made. Source: http://en.wikipedia.org/wiki/Saab_95</string>
+						</dict>
+						<dict>
+							<key>Title</key>
+							<string>Saab 900</string>
+							<key>Description</key>
+							<string>The Saab 900 is a car produced by Saab Automobile from 1978 until 1998 in two generations. The first generation from 1978 to 1993 is known as the &quot;classic&quot;; the generation from 1994 to 1998 is known as the &quot;new generation&quot; (see below).
+The &quot;classic&quot; Saab 900 is based on the Saab 99 chassis, though with a longer front end to meet U.S. frontal crash regulations. The 900 was produced in 2- and 4-door sedan, and 3- and 5-door hatchback configurations; in addition, from 1986, a cabriolet (convertible) model was produced. There were single- and twin-carburetor, fuel-injection, and turbocharged engines, including both Full-Pressure Turbo (FPT), and, in European models during the early 1990s, Low-Pressure Turbos (LPT). Source: http://en.wikipedia.org/wiki/Saab_900</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Animals</string>
+			<key>SubCategories</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Dogs</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>Title</key>
+							<string>German Shepherd</string>
+							<key>Description</key>
+							<string>The German Shepherd Dog (German: Deutscher Schäferhund), also known as an Alsatian or just the German Shepherd, is a breed of large-sized dog that originated in Germany.[2] The German Shepherd is a relatively new breed of dog, with its origin dating to 1899. As part of the Herding Group, the German Shepherd is a working dog developed originally for herding and guarding sheep. Because of its strength, intelligence and abilities in obedience training it is often employed in police and military roles around the world.[3] German Shepherds currently account for 4.6% of all dogs registered with the American Kennel Club. Due to its loyal and protective nature, the German Shepherd is one of the most registered of breeds.[4] Source: http://en.wikipedia.org/wiki/German_Shepherd</string>
+						</dict>
+						<dict>
+							<key>Title</key>
+							<string>Golden Retriever</string>
+							<key>Description</key>
+							<string>The Golden Retriever is a medium-sized breed of dog. They were historically developed as gundogs to retrieve shot waterfowl such as ducks and upland game birds during hunting and shooting parties.[1] They were named retriever from their ability to retrieve game undamaged and have an instinctive love of water. Golden retrievers have a dense inner coat that provides them with adequate warmth and a water repellent outer coat that lies flat against their body.The official colour of the breed is the varying shades of gold that are most often seen.[2] These dogs are well suited to suburban or country environments. Although they need lots of outdoor exercise, they should be kept fenced in because of their instincts as hunting dogs.[3] Source: http://en.wikipedia.org/wiki/Golden_Retriever</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>Cats</string>
+					<key>Items</key>
+					<array>
+						<dict>
+							<key>Title</key>
+							<string>Persian</string>
+							<key>Description</key>
+							<string>The Persian is a long-haired breed of cat characterized by its round face and shortened muzzle. Its name refers to Persia, the former name of Iran, where similar cats are found.[dubious – discuss] Recognized by the cat fancy since the late 19th century, it was developed first by the English, and then mainly by American breeders after the Second World War. In Britain, it is called the Longhair or Persian Longhair. Source: http://en.wikipedia.org/wiki/Persian_(cat)</string>
+						</dict>
+						<dict>
+							<key>Title</key>
+							<string>Sphynx</string>
+							<key>Description</key>
+							<string>The contemporary breed of Sphynx (known also as the Canadian Sphynx, distinct from the Russian Sphynx breeds - Peterbald, Don Sphynx) started in 1966, in Roncesvalles, Toronto when a hairless kitten named Prune was born. The kitten was mated with its mother (backcrossing), which produced one more naked kitten. Together with a few naked kittens found later it founded the first attempt to create a hairless breed. The first sphynx breeders faced a number of problems: The genetic pool was very limited; breeders had rather vague ideas about sphynx genetics, and many kittens died. There was also a problem with many of the females suffering convulsions. The last 2 descendants of Prune, a brother-sister pair, were sent to Holland in the 1970s, but the male was uninterested in mating and the female conceived only once, but lost the litter. Source: http://en.wikipedia.org/wiki/Sphynx_(cat)</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
 </plist>

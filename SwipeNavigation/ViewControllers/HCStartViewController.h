@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HCStartViewController : UIViewController
+@interface HCStartViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    UITableView *tableView_;
+    NSArray *categories_;
+}
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end

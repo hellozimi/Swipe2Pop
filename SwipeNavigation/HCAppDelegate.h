@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class HCViewController;
-
+@class HCStartViewController;
 @interface HCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) HCViewController *viewController;
+@property (nonatomic, retain) HCStartViewController *viewController;
 
 @end

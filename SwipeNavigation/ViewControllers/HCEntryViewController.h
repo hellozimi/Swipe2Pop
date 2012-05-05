@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HCEntryViewController : UIViewController
+@interface HCEntryViewController : UIViewController {
+    UITextView *descriptionTextView_;
+    UILabel *titleLabel_;
+}
+
+@property (nonatomic, retain) IBOutlet UITextView *descriptionTextView;
+@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 
 @end

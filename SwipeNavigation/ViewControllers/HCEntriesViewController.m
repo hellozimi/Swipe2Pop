@@ -7,12 +7,13 @@
 //
 
 #import "HCEntriesViewController.h"
-
+#import "HCEntryViewController.h"
 @interface HCEntriesViewController ()
 
 @end
 
 @implementation HCEntriesViewController
+@synthesize entries = entries_;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,6 +42,11 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -48,26 +54,25 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [entries_ count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
     
-    // Configure the cell...
+    NSDictionary *entry = [entries_ objectAtIndex:indexPath.row];
+    NSString *title = [entry objectForKey:@"Title"];
+    cell.textLabel.text = title;
     
     return cell;
 }
@@ -113,16 +118,17 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *entry = [entries_ objectAtIndex:indexPath.row];
+    NSString *title = [entry objectForKey:@"Title"];
+    NSString *descriptionText = [entry objectForKey:@"Description"];
+    HCEntryViewController *vc = [[[HCEntryViewController alloc] initWithNibName:@"HCEntryViewController" bundle:nil] autorelease];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    vc.titleLabel.text = title;
+    vc.descriptionTextView.text = descriptionText;
+    
 }
 
 @end
