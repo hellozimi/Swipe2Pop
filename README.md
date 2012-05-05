@@ -27,6 +27,3 @@ Just `import "UINavigationController+PopOnSwipeRight.h"` where you initialize yo
 
 
 ---
-
-
-This project is just ARC at the moment. This will be updated soon.
